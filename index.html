@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links</title>
+    <style>
+        /* General Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('img/744829.jpg');
+            background-size: cover;
+            /* Ensures the image covers the entire screen */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents tiling of the image */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        /* Container Styles */
+        
+        .container {
+            background-color: rgba(25, 28, 32, 0.734);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 500px;
+            animation: fadeIn 1s ease;
+        }
+        /* Fade-in animation */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Header Section */
+        
+        header {
+            margin-bottom: 20px;
+        }
+        
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        /* Links Section */
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .links a {
+            text-decoration: none;
+            color: #a0ff9b;
+            font-size: 1rem;
+            padding: 12px 0;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+            border-color: #a0ff9b;
+            ;
+        }
+        /* Footer Icons */
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+            position: relative;
+        }
+        
+        .social-icons a {
+            position: relative;
+        }
+        
+        .social-icons a img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
+        /* Tooltip Styling */
+        
+        .tooltip {
+            position: absolute;
+            top: -25px;
+            /* Adjust tooltip position closer to the icon */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #a0ff9b;
+            ;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            opacity: 0;
+            visibility: hidden;
+            white-space: nowrap;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        .social-icons a:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 600px) {
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .links a {
+                font-size: 0.9rem;
+                padding: 10px 0;
+            }
+            .social-icons a img {
+                width: 35px;
+                height: 35px;
+            }
+            .tooltip {
+                top: -30px;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/ig.jpg" alt="Your Profile" class="profile-picture">
+            <h1>My Digital Realm</h1>
+        </header>
+        <nav class="links">
+            <a href="https://sjdportfolio.netlify.app/" target="_blank">Portfolio</a>
+            <a href="https://sjdart.netlify.app/" target="_blank">Art Gallery</a>
+        </nav>
+        <footer class="social-icons">
+            <a href="https://www.linkedin.com/in/sajid-ali-185532224/" target="_blank">
+                <img src="img/icons8-linkedin-logo-50.png" alt="LinkedIn">
+                <span class="tooltip">LinkedIn</span>
+            </a>
+            <a href="https://www.behance.net/sajidali188" target="_blank">
+                <img src="img/icons8-behance-logo-50.png" alt="Behance">
+                <span class="tooltip">Behance</span>
+            </a>
+            <a href="https://github.com/SjdartP" target="_blank">
+                <img src="img/icons8-github-50.png" alt="GitHub">
+                <span class="tooltip">GitHub</span>
+            </a>
+            <a href="https://in.pinterest.com/sajidaliaf2701/" target="_blank">
+                <img src="img/icons8-pinterest-logo-50.png" alt="Pinterest">
+                <span class="tooltip">Pinterest</span>
+            </a>
+            <a href="https://www.instagram.com/sjd_art.2/" target="_blank">
+                <img src="img/icons8-instagram-logo-50.png" alt="Instagram">
+                <span class="tooltip">Instagram</span>
+            </a>
+            <a href="https://x.com/Sjd2701af" target="_blank">
+                <img src="img/icons8-twitter-logo-50.png" alt="Twitter">
+                <span class="tooltip">Twitter</span>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
